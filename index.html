@@ -44,6 +44,13 @@
     <!--cenralized navbar-->
     <div id="central-nav"></div>
 
+    <!--TIME SLIDER-->
+    <div id="time-slider-container">
+      <label for="time-slider">Filter by Date:</label>
+      <input type="range" id="time-slider" step="1">
+      <div id="time-display">All Dates</div>
+    </div>
+
     <!--MAP-->
     <div id="map"></div>
 
@@ -119,6 +126,11 @@
           minZoom: 2,
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
+      
+      var allMarkers = [];
+      var dates = [];
+      var markersLayer = L.layerGroup().addTo(map);
+      
       omnivore.csv('sites-popup.csv') //Add site-map csv here
       .on('ready', function(layer) {
         this.eachLayer(function(marker) {
@@ -128,8 +140,60 @@
           marker.toGeoJSON().properties.culture + '<br><br> ' +
           marker.toGeoJSON().properties.info + '<br><br> ' +
           marker.toGeoJSON().properties.link, {autoPanPadding: [5,55]});
+          
+          // Store marker with its date
+          var markerDate = marker.toGeoJSON().properties.date;
+          var year = null;
+          if (markerDate) {
+            year = parseInt(markerDate);
+            if (!isNaN(year)) {
+              dates.push(year);
+            } else {
+              year = null; // Invalid date format, treat as no date
+            }
+          }
+          
+          // Add all markers to the array (even those without valid dates)
+          allMarkers.push({marker: marker, date: year});
+          
+          // Add all markers initially
+          markersLayer.addLayer(marker);
+        });
+        
+        // Set up the time slider
+        if (dates.length > 0) {
+          dates.sort(function(a, b) { return a - b; });
+          var minDate = dates[0];
+          var maxDate = dates[dates.length - 1];
+          
+          var slider = document.getElementById('time-slider');
+          slider.min = minDate;
+          slider.max = maxDate;
+          slider.value = maxDate;
+          
+          updateTimeDisplay(maxDate);
+          
+          slider.addEventListener('input', function() {
+            var selectedYear = parseInt(this.value);
+            filterMarkersByDate(selectedYear);
+            updateTimeDisplay(selectedYear);
           });
-      }).addTo(map);
+        }
+      });
+      
+      function filterMarkersByDate(year) {
+        markersLayer.clearLayers();
+        allMarkers.forEach(function(item) {
+          if (item.date === null || item.date <= year) {
+            markersLayer.addLayer(item.marker);
+          }
+        });
+      }
+      
+      function updateTimeDisplay(year) {
+        document.getElementById('time-display').textContent = 
+          (year !== null && year !== undefined) ? 'Up to Year: ' + year : 'All Dates';
+      }
     </script>
   </body>
 </html>

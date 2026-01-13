@@ -47,7 +47,7 @@
     <!--TIME SLIDER-->
     <div id="time-slider-container">
       <label for="time-slider">Filter by Date:</label>
-      <input type="range" id="time-slider" min="0" max="100" value="100" step="1">
+      <input type="range" id="time-slider" step="1">
       <div id="time-display">All Dates</div>
     </div>
 
@@ -143,16 +143,18 @@
           
           // Store marker with its date
           var markerDate = marker.toGeoJSON().properties.date;
+          var year = null;
           if (markerDate) {
-            var year = parseInt(markerDate);
+            year = parseInt(markerDate);
             if (!isNaN(year)) {
-              allMarkers.push({marker: marker, date: year});
               dates.push(year);
+            } else {
+              year = null; // Invalid date format, treat as no date
             }
-          } else {
-            // If no date, add marker anyway (will always be visible)
-            allMarkers.push({marker: marker, date: null});
           }
+          
+          // Add all markers to the array (even those without valid dates)
+          allMarkers.push({marker: marker, date: year});
           
           // Add all markers initially
           markersLayer.addLayer(marker);
@@ -190,7 +192,7 @@
       
       function updateTimeDisplay(year) {
         document.getElementById('time-display').textContent = 
-          year ? 'Up to Year: ' + year : 'All Dates';
+          (year !== null && year !== undefined) ? 'Up to Year: ' + year : 'All Dates';
       }
     </script>
   </body>

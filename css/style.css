@@ -143,45 +143,47 @@ code {
 
 #time-slider-container {
     position: absolute;
-    top: 80px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 15px 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
     text-align: center;
 }
 
 #time-slider-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    display: inline;
+    margin-right: 8px;
+    font-weight: 600;
     color: #333;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #time-slider {
-    width: 100%;
-    margin-bottom: 8px;
+    width: 150px;
+    margin: 0 8px;
     cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 #time-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     background: #36A184;
     cursor: pointer;
     border-radius: 50%;
 }
 
 #time-slider::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     background: #36A184;
     cursor: pointer;
     border-radius: 50%;
@@ -189,18 +191,32 @@ code {
 }
 
 #time-display {
+    display: inline;
     color: #333;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 @media (max-width: 767px) {
     #time-slider-container {
-        top: 60px;
+        bottom: 65px;
         left: 10px;
         right: 10px;
         transform: none;
         min-width: auto;
+        padding: 6px 10px;
+    }
+    
+    #time-slider {
+        width: 120px;
+    }
+    
+    #time-slider-container label {
+        font-size: 11px;
+    }
+    
+    #time-display {
+        font-size: 11px;
     }
 }
 

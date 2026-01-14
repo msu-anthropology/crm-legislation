@@ -26,7 +26,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #000;
+  background-color: #2D8674;
 }
 
 .footer2 {
@@ -35,7 +35,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #000;
+  background-color: #2D8674;
 }
 
 
@@ -134,6 +134,14 @@ code {
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
+}
+.modal-header {
+	background-color: #2D8674;
+	color: #fff;
+}
+.modal-footer {
+	background-color: #2D8674;
+	color: #fff;
 }
 /* MAP CSS
 -------------------------------------------------- */
@@ -413,11 +421,11 @@ div.back {
   background-repeat: repeat-x;
 }
 .navbar-default {
-  background-image: -webkit-linear-gradient(top, #1a1a1a 0%, #000 100%);
-  background-image:      -o-linear-gradient(top, #1a1a1a 0%, #000 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#000));
-  background-image:         linear-gradient(to bottom, #1a1a1a 0%, #000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1a1a1a', endColorstr='#ff000000', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #36A184 0%, #2D8674 100%);
+  background-image:      -o-linear-gradient(top, #36A184 0%, #2D8674 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36A184), to(#2D8674));
+  background-image:         linear-gradient(to bottom, #36A184 0%, #2D8674 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff36A184', endColorstr='#ff2D8674', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-radius: 4px;

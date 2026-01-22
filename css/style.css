@@ -14,7 +14,6 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
   width: 100%;
   background-color: #1a1a1a;
@@ -24,18 +23,16 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #2D8674;
+  background-color: #3e4241;
 }
 
 .footer2 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #2D8674;
+  background-color: #3e4241;
 }
 
 
@@ -108,23 +105,23 @@ code {
 #about p,h1,h2,h3,h4,h5 {
 	padding-left: 15px;
 	padding-right: 15px;
-	color: #333;
+	color: #3e4241;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
 }
 .modal-body {
-	color: #333;
+	color: #3e4241;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
 }
 .modal-header {
-	background-color: #2D8674;
+	background-color: #3e4241;
 	color: #fff;
 }
 .modal-footer {
-	background-color: #2D8674;
+	background-color: #3e4241;
 	color: #fff;
 }
 /* MAP CSS
@@ -192,7 +189,7 @@ code {
 #time-slider::-moz-range-thumb {
     width: 14px;
     height: 14px;
-    background: #36A184;
+    background: #3e4241;
     cursor: pointer;
     border-radius: 50%;
     border: none;
@@ -243,18 +240,18 @@ code {
 }
 
 #detail a {
-	color: #e69300;
+	color: #6272a4;
 	text-decoration: none;
 }
 
 #detail a:hover {
-    color: #b37300;
+    color: #6272a4;
     text-decoration: none;
 }
 
 
 a.back {
-    background-color: #36A184;
+    background-color: #3e4241;
     color: #fff;
     margin-top: 150px;
     padding: 20px;
@@ -264,7 +261,7 @@ a.back {
 }
 
 a.back:hover {
-    background-color: #2D8674;
+    background-color: #3e4241;
 }
 
 div.back {

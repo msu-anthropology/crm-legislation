@@ -124,7 +124,7 @@ code {
 #about p,h1,h2,h3,h4,h5 {
 	padding-left: 15px;
 	padding-right: 15px;
-	color: #3e4241;
+	color: #6cb1a0;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
@@ -166,7 +166,7 @@ code {
 }
 
 #detail a {
-	color: #e69300;
+	color: #6cb1a0;
 	text-decoration: none;
 }
 
@@ -175,7 +175,7 @@ code {
 }
 
 #detail a:hover {
-    color: #b37300;
+    color: #6cb1a0;
     text-decoration: underline;
 }
 

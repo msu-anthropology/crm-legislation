@@ -26,7 +26,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #2D8674;
+  background-color: #3e4241;
 }
 
 .footer2 {
@@ -35,7 +35,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #2D8674;
+  background-color: #3e4241;
 }
 
 
@@ -47,7 +47,7 @@ body {
 		padding-top: 50px;
 		margin-left: 15px;
 		margin-right: 15px;
-		color: #333;
+		color: #3e4241;
 		line-height: 1.42857143;
 		letter-spacing: normal;
 		font-weight: normal;
@@ -60,7 +60,7 @@ body {
 		margin: 0 auto;
 		border-left: 15px;
 		border-right: 15px;
-		color: #333;
+		color: #3e4241;
 		line-height: 1.42857143;
 		letter-spacing: normal;
 		font-weight: normal;
@@ -73,7 +73,7 @@ body {
 		margin: 0 auto;
 		border-left: 15px;
 		border-right: 15px;
-		color: #333;
+		color: #3e4241;
 		line-height: 1.42857143;
 		letter-spacing: normal;
 		font-weight: normal;
@@ -86,7 +86,7 @@ body {
 		margin: 0 auto;
 		border-left: 15px;
 		border-right: 15px;
-		color: #333;
+		color: #3e4241;
 		line-height: 1.42857143;
 		letter-spacing: normal;
 		font-weight: normal;
@@ -94,7 +94,7 @@ body {
 }
 .popover {
 	font-size: 12px;
-	color: #333;
+	color: #3e4241;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
@@ -124,23 +124,23 @@ code {
 #about p,h1,h2,h3,h4,h5 {
 	padding-left: 15px;
 	padding-right: 15px;
-	color: #333;
+	color: #3e4241;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
 }
 .modal-body {
-	color: #333;
+	color: #3e4241;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
 }
 .modal-header {
-	background-color: #2D8674;
+	background-color: #3e4241;
 	color: #fff;
 }
 .modal-footer {
-	background-color: #2D8674;
+	background-color: #3e4241;
 	color: #fff;
 }
 /* MAP CSS
@@ -188,7 +188,7 @@ code {
 }
 
 a.back {
-    background-color: #36A184;
+    background-color: #3e4241;
     color: #FFF;
     margin-top: 150px;
     padding: 20px;
@@ -198,7 +198,7 @@ a.back {
 }
 
 a.back:hover {
-    background-color: #2D8674;
+    background-color: #3e4241;
 }
 
 div.back {
@@ -421,11 +421,11 @@ div.back {
   background-repeat: repeat-x;
 }
 .navbar-default {
-  background-image: -webkit-linear-gradient(top, #36A184 0%, #2D8674 100%);
-  background-image:      -o-linear-gradient(top, #36A184 0%, #2D8674 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#36A184), to(#2D8674));
-  background-image:         linear-gradient(to bottom, #36A184 0%, #2D8674 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff36A184', endColorstr='#ff2D8674', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #3e4241 0%, #3e4241 100%);
+  background-image:      -o-linear-gradient(top, #3e4241 0%, #3e4241 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e4241), to(#3e4241));
+  background-image:         linear-gradient(to bottom, #3e4241 0%, #3e4241 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3e4241', endColorstr='#ff3e4241', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-radius: 4px;

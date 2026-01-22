@@ -4103,11 +4103,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #000;
 }
 .navbar-default .navbar-brand {
-  color: #e69300;
+  color: #9caf88;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #b37300;
+  color: #9caf88;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -4118,14 +4118,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #e69300;
+  color: #9caf88;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #f2f2f2;
-  background-color: #e69300;
+  background-color: #9caf88;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4151,7 +4151,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #b37300;
+  background-color: #9caf88;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -5457,7 +5457,7 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
-  color: #e69300;
+  color: #9caf88;
 }
 .modal-body {
   position: relative;

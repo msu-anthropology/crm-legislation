@@ -12,14 +12,14 @@
 .dracula a,
 .dracula a:hover,
 .dracula a:visited {
-    color: #6272a4;
+    color: #9caf88;
 }
 
 .dracula.bootsidemenu-left,
 .dracula.bootsidemenu-right,
 .dracula.bootsidemenu-left > .toggler,
 .dracula.bootsidemenu-right > .toggler {
-    border-color: #44475a;
+    border-color: #9caf88;
 }
 
 .dracula .list-group-item.active,
@@ -27,8 +27,8 @@
 .dracula .list-group-item.active:hover,
 .dracula .item.active:focus {
     color: #44475a;
-    background-color: #ff5555;
-    border-color: #ff5555;
+    background-color: #9caf88;
+    border-color: #9caf88;
 }
 
 .dracula a.list-group-item {
@@ -41,8 +41,8 @@
 .dracula button.list-group-item:hover {
     color: #44475a;
     text-decoration: none;
-    background-color: #ff5555;
-    border-color: #ff5555;
+    background-color: #9caf88;
+    border-color: #9caf88;
 }
 
 /*========== /Theme Dracula ==========*/
